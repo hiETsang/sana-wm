@@ -109,12 +109,10 @@ p {
   text-transform: uppercase;
 }
 
-.brand span {
-  width: 0.55rem;
-  height: 0.55rem;
-  border-radius: 999px;
-  background: var(--accent);
-  box-shadow: 0 0 18px rgba(142, 240, 58, 0.7);
+.brand img {
+  width: 1.45rem;
+  height: 1.45rem;
+  flex: none;
 }
 
 .site-header nav {

@@ -1,10 +1,11 @@
 /**
- * [INPUT]: 依赖 site.ts 的导航与 footer 配置，依赖 TrackedLink 记录外链。
+ * [INPUT]: 依赖 next/link、next/image、site.ts 的导航与 footer 配置、TrackedLink 与品牌 SVG 静态资产。
  * [OUTPUT]: 对外提供 SiteHeader 与 SiteFooter 组件。
- * [POS]: components 的壳层模块，统一页面级导航与页脚。
+ * [POS]: components 的壳层模块，统一页面级导航、品牌入口与页脚。
  * [PROTOCOL]: 变更时更新此头部，然后检查 AGENTS.md
  */
 import Link from "next/link";
+import Image from "next/image";
 import { footerLinks, navigation, siteConfig } from "@/lib/site";
 import { officialLinks } from "@/lib/content";
 import { TrackedLink } from "./tracked-link";
@@ -13,7 +14,13 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="brand" href="/">
-        <span aria-hidden="true" />
+        <Image
+          src="/brand-mark.svg"
+          alt=""
+          aria-hidden="true"
+          width={24}
+          height={24}
+        />
         {siteConfig.name}
       </Link>
       <nav aria-label="Primary navigation">

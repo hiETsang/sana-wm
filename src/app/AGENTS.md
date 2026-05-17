@@ -2,8 +2,10 @@
 > L2 | 父级: /AGENTS.md
 
 成员清单
+apple-icon.png: Apple 触控图标。
+favicon.ico: 顶层 favicon 文件，确保浏览器标签与搜索结果识别。
 globals.css: 全局主题、排版、布局与响应式样式。
-icon.png: 站点 favicon。
+icon.png: 站点通用 app icon。
 layout.tsx: 根布局、站点级 metadata、字体与结构化数据挂载。
 page.tsx: 首页路由入口，绑定首页 metadata 与 LandingPage。
 robots.ts: 输出爬虫访问策略。

@@ -10,7 +10,9 @@ import { faqs } from "@/lib/content";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "SANA-WM",
+  title: {
+    absolute: "SANA-WM | Independent Guide to the Minute-Scale World Model",
+  },
   description:
     "What SANA-WM is, what it can do, official examples, hardware facts, and links to the official paper, project page, and code.",
   alternates: {

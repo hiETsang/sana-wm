@@ -2,6 +2,8 @@
 
 Independent English guide site for the `SANA-WM` search term.
 
+Repository: `https://github.com/hiETsang/sana-wm`
+
 ## Local development
 ```bash
 pnpm install

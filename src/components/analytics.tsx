@@ -1,12 +1,13 @@
 /**
- * [INPUT]: 依赖 next/script 与 NEXT_PUBLIC_GA_ID 环境变量。
+ * [INPUT]: 依赖 next/script、siteConfig.googleAnalyticsId 与可选 NEXT_PUBLIC_GA_ID 环境变量。
  * [OUTPUT]: 对外提供 Analytics 组件。
  * [POS]: components 的可选分析脚本入口，被根布局消费。
  * [PROTOCOL]: 变更时更新此头部，然后检查 AGENTS.md
  */
 import Script from "next/script";
+import { siteConfig } from "@/lib/site";
 
-const gaId = process.env.NEXT_PUBLIC_GA_ID;
+const gaId = process.env.NEXT_PUBLIC_GA_ID ?? siteConfig.googleAnalyticsId;
 
 export function Analytics() {
   if (!gaId) {

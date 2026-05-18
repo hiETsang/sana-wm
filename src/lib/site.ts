@@ -11,6 +11,7 @@ export const siteConfig = {
   description:
     "Independent guide to SANA-WM, NVIDIA Research's minute-scale world model for 720p camera-controlled video generation.",
   email: "hello@sana-wm.com",
+  googleAnalyticsId: "G-JK1CZ3NGVF",
   updatedAt: "May 17, 2026",
 };
 

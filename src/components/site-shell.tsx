@@ -65,6 +65,7 @@ export function SiteFooter() {
             {item.label}
           </Link>
         ))}
+        <a href="https://maitranscribe2.com/" target="_blank" rel="noreferrer">MaiTranscribe</a>
       </div>
     </footer>
   );
